@@ -1,0 +1,119 @@
+/* Reset some basic elements to provide a consistent baseline */
+body, h1, h2, ul, li, form, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Hide elements with the 'hidden' class */
+.hidden {
+    display: none;
+}
+
+/* Style the clock */
+#clock {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+/* Style the greeting */
+#greeting {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+/* Style the to-do form */
+#todo-form {
+    margin: 20px 0;
+}
+
+#todo-form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the to-do list */
+#todo-list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    width: 300px;
+}
+
+/* 가운데 정렬을 위한 추가 스타일 */
+#todo-list li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+#todo-list li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the quote section */
+#quote {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#quote span:first-child {
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#quote span:last-child {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Style the weather section */
+#weather {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#weather span {
+    display: block;
+    font-size: 16px;
+}
+
+/* Additional styling for overall layout and responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    #todo-form input {
+        width: 100%;
+    }
+
+    #todo-list {
+        width: 100%;
+    }
+}
+
